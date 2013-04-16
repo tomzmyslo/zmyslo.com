@@ -2,7 +2,20 @@ html {
 	font-family: sans-serif;
 }
 
+.container {
+	padding-top: 50px;
+	margin: auto;
+	width: 600px;
+}
+
 .logo {
-	margin-top: 50px;
+	margin: auto;
+	width: 410px;
+	text-align: center;
+}
+
+.social {
+	margin: auto;
+	width: 410px;
 	text-align: center;
 }
