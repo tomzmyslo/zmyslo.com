@@ -3,7 +3,7 @@ html {
 }
 
 .container {
-	padding-top: 50px;
+	padding-top: 30px;
 	margin: auto;
 	width: 600px;
 }
@@ -12,6 +12,21 @@ html {
 	margin: auto;
 	width: 410px;
 	text-align: center;
+}
+
+.photo {
+	margin: auto;
+	width: 410px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.bio {
+	margin: auto;
+	width: 410px;
+	text-align: center;
+	font-size: medium;
 }
 
 .social {
