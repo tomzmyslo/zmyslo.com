@@ -1,10 +1,12 @@
 import 'tailwindcss/tailwind.css'
 import Layout from '../components/layout'
 
-export default function MyApp({ Component, pageProps }) {
+function Zmyslo({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
   )
 }
+
+export default Zmyslo
