@@ -5,12 +5,17 @@ function HomePage() {
   return(
     <div className="container mx-auto">
       <div className="flex justify-center">
-        <div className="h-screen my-auto -mt-20 flex items-center">
-          <Image
-            className="filter invert"
-            src={logo}
-            alt="Zmyslo Logo"
-          />
+        <div className="flex items-center h-screen my-auto">
+          <div className="text-center text-white">
+            <Image
+              className="filter invert"
+              src={logo}
+              alt="Zmyslo Logo"
+            />
+            <p className="text-xl antialiased font-light">
+              Developer / iOS / Ruby on Rails
+            </p>
+          </div>
         </div>
       </div>
     </div>
