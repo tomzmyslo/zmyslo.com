@@ -13,7 +13,7 @@ function HomePage() {
               alt="Zmyslo Logo"
             />
             <p className="text-xl antialiased font-light">
-              Developer / iOS / Ruby on Rails
+              Ruby on Rails / iOS / JavaScript
             </p>
           </div>
         </div>
