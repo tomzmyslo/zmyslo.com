@@ -1,25 +1,39 @@
-import Image from 'next/image'
-import logo from '../public/zmyslo-retro-logo.png'
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import Github from '../components/Github';
+import logo from '../public/zmyslo-retro-logo.png';
 
 function HomePage() {
-  return(
-    <div className="container mx-auto">
-      <div className="flex justify-center">
-        <div className="flex items-center h-screen my-auto">
-          <div className="text-center text-white">
-            <Image
-              className="filter invert"
-              src={logo}
-              alt="Zmyslo Logo"
-            />
-            <p className="text-xl antialiased font-light">
-              Ruby on Rails / iOS / JavaScript
-            </p>
+  return (
+    <div className='container mx-auto'>
+      <div className='flex justify-center'>
+        <div className='flex items-center h-screen my-auto'>
+          <div className='text-center text-white'>
+            <Head>
+              <title>Zmyslo</title>
+              <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+            </Head>
+            <Image className='filter invert pb-8' src={logo} alt='Zmyslo Logo' />
+            <div className='flex justify-center space-x-2'>
+              <p className='text-xl font-light pb-2'>Ruby</p>
+              <p className='text-xl font-light pb-2'>/</p>
+              <p className='text-xl font-light pb-2'>Swift</p>
+              <p className='text-xl font-light pb-2'>/</p>
+              <p className='text-xl font-light pb-2'>JavaScript</p>
+            </div>
+            <div className='flex justify-center'>
+              <Link href='https://github.com/tomzmyslo'>
+                <a target='_blank'>
+                  <Github />
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
