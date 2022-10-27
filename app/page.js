@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import { Bungee_Outline } from '@next/font/google';
 
@@ -12,10 +11,6 @@ export default function Page() {
       <div className='flex justify-center'>
         <div className='flex items-center h-screen my-auto'>
           <div className='text-center text-white'>
-            <Head>
-              <title>Zmyslo</title>
-              <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-            </Head>
             <div className={font.className}>
               <h1 className='text-6xl sm:text-7xl md:text-8xl xl:text-9xl uppercase mb-2'>
                 Zmyslo
