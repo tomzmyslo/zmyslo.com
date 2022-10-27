@@ -1,0 +1,31 @@
+
+> zmyslo.com@0.1.0 build
+> next build
+
+warn  - You have enabled experimental feature (appDir) in next.config.js.
+warn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+info  - Thank you for testing `appDir` please leave your feedback at https://nextjs.link/app-feedback
+
+info  - Creating an optimized production build...
+info  - Compiled successfully
+info  - Linting and checking validity of types...
+info  - Collecting page data...
+info  - Generating static pages (0/3)
+info  - Generating static pages (3/3)
+info  - Finalizing page optimization...
+
+Route (app)                                Size     First Load JS
+─ ○ /                                      0 B                0 B
++ First Load JS shared by all              66.5 kB
+  ├ chunks/main-app-875afe88ab919d68.js    64.4 kB
+  └ chunks/webpack-14058d05c96523e9.js     2.06 kB
+
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   179 B          79.7 kB
++ First Load JS shared by all              79.6 kB
+  ├ chunks/main-a08b93cde0018bf6.js        77.3 kB
+  ├ chunks/pages/_app-9f5490aa3d56632f.js  192 B
+  └ chunks/webpack-14058d05c96523e9.js     2.06 kB
+
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
