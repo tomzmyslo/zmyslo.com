@@ -1,15 +1,26 @@
 export default function Project({ project }) {
-  const { name, medium, technologies } = project;
+  const { name, medium, description, technologies } = project;
+
+  function createMarkup() {
+    return { __html: description };
+  }
 
   return (
-    <div>
-      <h3 className='font-bold'>{name}</h3>
-      <p>{medium}</p>
-      <ul>
-        {technologies.map((technology) => {
-          return <li>{technology}</li>;
+    <div className='px-4 pb-2 mb-8 border-l-4 border-indigo-600'>
+      <h3 className='font-bold text-3xl'>{name}</h3>
+      <p className='text-sm font-semibold mb-3'>{medium}</p>
+      <div className='py-25 mb-4' dangerouslySetInnerHTML={createMarkup()} />
+      <h4 className='font-semibold text-sm mb-1'>Technologies:</h4>
+      <ul className='list-disc list-inside pl-1'>
+        {technologies.map((technology, i) => {
+          return (
+            <li key={i} className='text-sm mb-1'>
+              {technology}
+            </li>
+          );
         })}
       </ul>
+      {/* <hr className='my-4 border border-indigo-600' /> */}
     </div>
   );
 }
