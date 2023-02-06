@@ -1,27 +1,29 @@
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+import { Inter } from '@next/font/google';
 import './global.css';
 
-export default function RootLayout({ children }) {
-  const date = new Date();
-  const year = date.getFullYear();
+const inter = Inter({ subsets: ['latin'] });
 
+export default function RootLayout({ children }) {
   return (
-    <html>
+    <html lang='en'>
       <head>
-        <title>Zmyslo</title>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <title>tom zmyslo</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width, viewport-fit=cover' />
+        <meta name='theme-color' content='#4f46e5' />
+        <meta name='description' content='Personal website of Tom Zmyslo.' />
+        <meta name='keywords' content='software engineer, ruby, javascript, swift, code' />
       </head>
-      <body>
-        <main className='relative antialiased h-screen bg-gradient-to-b from-green-400 to-indigo-600'>
-          {children}
-          <footer className='container absolute left-0 right-0 mx-auto bottom-4'>
-            <div className='flex justify-center'>
-              <p className='text-xs font-thin text-white'>
-                &copy; {year} Tom Zmyslo. All rights reserved.
-              </p>
-            </div>
-          </footer>
-        </main>
+      <body
+        className={`${inter.className} antialiased flex flex-col justify-between items-center h-screen bg-slate-900`}
+      >
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
 }
+
+//

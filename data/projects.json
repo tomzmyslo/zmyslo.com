@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Jenn-Air for Business",
+    "medium": "Web Application",
+    "dates_active": "",
+    "status": "Deprecated",
+    "technologies": ["Ruby on Rails", "PostgreSQL", "Bootstrap", "AWS"]
+  }
+]
