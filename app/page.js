@@ -1,22 +1,24 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import GitHub from 'components/GitHub';
-import LinkedIn from 'components/LinkedIn';
+import GitHub from 'components/icons/GitHub';
+import LinkedIn from 'components/icons/LinkedIn';
 
 export default function Page() {
   return (
     <div className='flex flex-col justify-center space-y-8 h-full text-indigo-100'>
       <div className='text-center'>
         <div className='flex justify-center pb-2'>
-          <Image
-            className='rounded-full border-2 lg:border-4 border-indigo-600'
-            src='/me.jpeg'
-            alt='Tom Zmyslo'
-            height={120}
-            width={120}
-          />
+          <div className='rounded-full border-2 lg:border-4 border-indigo-600 overflow-hidden bg-indigo-600'>
+            <Image
+              className='rounded-full mix-blend-hard-light'
+              src='/me.jpeg'
+              alt='Tom Zmyslo'
+              height={144}
+              width={144}
+            />
+          </div>
         </div>
-        <h2 className='text-5xl md:text-6xl lg:text-7xl text-indigo-600 font-bold mb-2'>
+        <h2 className='text-5xl md:text-6xl lg:text-7xl text-indigo-100 font-bold mb-2'>
           Tom Zmyslo
         </h2>
         <h3 className='text-indigo-300 text-lg md:text-xl lg:text-2xl'>
@@ -44,14 +46,14 @@ export default function Page() {
           className='text-indigo-600 hover:text-indigo-500'
           target='_blank'
         >
-          <GitHub size={30} />
+          <GitHub color='text-indigo-600' size={30} />
         </Link>
         <Link
           href='https://www.linkedin.com/in/tomzmyslo'
           className='text-indigo-600 hover:text-indigo-500'
           target='_blank'
         >
-          <LinkedIn size={30} />
+          <LinkedIn color='text-indigo-600' size={30} />
         </Link>
       </div>
     </div>

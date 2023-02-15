@@ -5,7 +5,7 @@ export default function Pill({ color, content }) {
 
   return (
     <span
-      className={`inline-block px-2 py-1 rounded uppercase text-xs font-semibold mr-1 mb-1 ${backgroundColor}`}
+      className={`inline-block px-2 py-1 rounded uppercase text-xs font-bold mr-1 mb-1 ${backgroundColor}`}
     >
       {content}
     </span>

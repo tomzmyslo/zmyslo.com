@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <head>
-      <title>tom zmyslo | resume</title>
+      <title>Tom Zmyslo | Resume</title>
     </head>
   );
 }

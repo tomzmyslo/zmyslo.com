@@ -1,16 +1,9 @@
-export default function Section({
-  children,
-  name,
-  backgroundColor = 'bg-white',
-  textColor = 'text-slate-800',
-}) {
+export default function Section({ children, name }) {
   return (
-    <section
-      className={`${backgroundColor} ${textColor} p-2 md:px-4 first:rounded-t last:rounded-b`}
-    >
+    <section className='text-indigo-100 py-2'>
       {name && (
         <>
-          <h2 className='text-xl font-black uppercase text-slate-700'>{name}</h2>
+          <h2 className='text-xl font-black uppercase'>{name}</h2>
           <hr className='mb-2' />
         </>
       )}

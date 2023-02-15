@@ -3,7 +3,7 @@ import Logo from './Logo';
 
 export default function Header() {
   return (
-    <nav className='bg-indigo-600 p-2 w-full fixed lg:p-0'>
+    <nav className='bg-indigo-600 p-2 w-full fixed z-50 lg:p-0'>
       <div className='container mx-auto'>
         <div className='flex justify-between items-center h-10 lg:h-14'>
           <Link href='/'>

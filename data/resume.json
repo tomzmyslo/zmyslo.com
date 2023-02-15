@@ -1,4 +1,8 @@
 {
+  "email": "tom@zmyslo.com",
+  "mobile": "2698232295",
+  "website": "zmyslo.com",
+  "github": "github.com/tomzmyslo",
   "experience": [
     {
       "company": "TELUS Agriculture & Consumer Goods",
@@ -92,7 +96,14 @@
       "field": "Music"
     }
   ],
-  "expertise": ["Software Architecture", "API Design", "Agile & Scrum", "User Experience", "XX"],
+  "expertise": [
+    "Agile & Scrum",
+    "API Design",
+    "Attention to Detail",
+    "Information Architecture",
+    "Software Architecture",
+    "User Experience"
+  ],
   "skills": [
     "Ruby",
     "Swift",
@@ -110,5 +121,8 @@
     "Tailwind",
     "Bootstrap",
     "GitHub"
-  ]
+  ],
+  "languages": ["CSS", "HTML", "JavaScript", "PostgreSQL", "Ruby", "Swift"],
+  "libraries": ["Bootstrap", "Next.js", "Node", "React", "RSpec", "Ruby on Rails", "Tailwind"],
+  "tools": ["AWS", "GitHub", "Heroku", "Redis", "Vercel", "Vite", "Xcode"]
 }
