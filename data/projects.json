@@ -2,7 +2,7 @@
   {
     "name": "Jenn-Air for Business",
     "medium": "Web Application",
-    "description": "<p class='mb-4'>Jenn-Air for Business was the next-generation of training sites built from the ground up for Jenn-Air. I was involved in every aspect of the site, from planning to data modeling to the final full-stack build in Ruby on Rails with some Angular 1.6 and a custom Bootstrap 3 implementation for branding purposes. The final application was hosted on Heroku with assets stored in AWS S3 and served with Cloudfront.</p><p class='mb-4'>The site features a heavy focus around the brand's products and the materials related to them and a responsive design that looks great on any device, sales associates always have the full wealth of knowledge of the Jenn-Air product line at the tips of their fingers.</p><p class='mb-2'>Other features of the site included:</p><ul class='list-disc pl-4 marker:text-teal-400'><li>a collection of trade articles focused on details to aid in sales</li><li>a bi-monthly newsletter that promotes the articles (sent to 10,000+ recipients)</li><li>a registration workflow for sales associates that organically adds new dealer locations</li><li>a custom CMS designed to build pages for products that link to any related materials</li><li>a spec sheet generator that used the product info in the database to create a PDF on the fly</li><li>a custom e-learning course implementation that was device agnostic</li><li>a custom quiz interface that allows for quick assessment of individual's product knowledge</li><li>a modular design that allows for easy expansion and augmentation in the future</li></ul>",
+    "description": "<p class='mb-4'>Jenn-Air for Business was the next-generation of training sites built from the ground up for Jenn-Air. I was involved in every aspect of the site, from planning to data modeling to the final full-stack build in Ruby on Rails with some Angular and a custom Bootstrap implementation for branding purposes. The final application was hosted on Heroku with assets stored in AWS S3 and served with Cloudfront.</p><p class='mb-4'>The site features a heavy focus around the brand's products and the materials related to them and a responsive design that looks great on any device, sales associates always have the full wealth of knowledge of the Jenn-Air product line at the tips of their fingers.</p><p class='mb-2'>Other features of the site included:</p><ul class='list-disc pl-4 marker:text-teal-400'><li>a collection of trade articles focused on details to aid in sales</li><li>a bi-monthly newsletter that promotes the articles (sent to 10,000+ recipients)</li><li>a registration workflow for sales associates that organically adds new dealer locations</li><li>a custom CMS designed to build pages for products that link to any related materials</li><li>a spec sheet generator that used the product info in the database to create a PDF on the fly</li><li>a custom e-learning course implementation that was device agnostic</li><li>a custom quiz interface that allows for quick assessment of individual's product knowledge</li><li>a modular design that allows for easy expansion and augmentation in the future</li></ul>",
     "status": "Deprecated",
     "technologies": ["Ruby on Rails", "PostgreSQL", "Bootstrap", "AWS"]
   },
@@ -15,7 +15,7 @@
   },
   {
     "name": "Kitchenatomy",
-    "medium": "Multi-Platform Application",
+    "medium": "Desktop & iPad Application",
     "description": "Kitchenatomy was a multi-platform app that demoed KitchenAid appliance features through 3D animated videos presented seamlessly to the user. The heart of this application was created with HTML5, CSS3 and JavaScript and used a custom WebView wrapper on the various platforms to enable use on iPads, Macs, and Windows PCs.",
     "status": "Deprecated",
     "technologies": ["HTML", "CSS", "JavaScript"]
@@ -25,7 +25,7 @@
     "medium": "iOS Application",
     "description": "<p class='mb-4'>The BTU Watt Comparison app uses the official efficiency equations for electric energy types to highlight equivalencies between gas and electric cooktops. The app also includes a toggle to switch between 'induction' and 'radiant' electric energy types.</p><p class='mb-4'>The app was delivered under the Jenn-Air brand and available as a universal app for the iOS platform originally written in Objective-C and later converted to Swift.</p>",
     "status": "Deprecated",
-    "technologies": ["Swift", "Cocoa Touch"]
+    "technologies": ["Swift", "Objective-C"]
   },
   {
     "name": "Kitchenatomy App Store",

@@ -7,7 +7,7 @@ export default function Telephone({ color, size }) {
       width={size}
       height={size}
       fill='currentColor'
-      class={iconColor}
+      className={iconColor}
       viewBox='0 0 16 16'
     >
       <path
