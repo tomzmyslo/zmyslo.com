@@ -1,0 +1,128 @@
+{
+  "email": "tom@zmyslo.com",
+  "mobile": "2698232295",
+  "website": "zmyslo.com",
+  "github": "github.com/tomzmyslo",
+  "experience": [
+    {
+      "company": "TELUS Agriculture & Consumer Goods",
+      "roles": [
+        {
+          "title": "Software Engineer / Team Lead",
+          "tenure": "July 2022 - Present",
+          "responsibilities": [
+            "Lead agile refinement sessions",
+            "Perform peer code reviews",
+            "Manage code deployments"
+          ]
+        },
+        {
+          "title": "Software Engineer",
+          "tenure": "October 2022 - June 2022",
+          "responsibilities": [
+            "Develop new features for custom Program Management product",
+            "Develop CQRS-based microservice components in Ruby",
+            "Update Ruby-based APIs to support multi-tenancy",
+            "Created a JSON transform pipeline using jq",
+            "Developed automatically generated client reports from multiple data sources",
+            "CI/CD pipelines with CircleCI and Azure DevOps"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Red Ventures",
+      "roles": [
+        {
+          "title": "Front End Developer",
+          "tenure": "October 2018 - September 2019",
+          "responsibilities": [
+            "Developed React components for a site-wide design system",
+            "Implemented A/B testing scenarios developed by business team",
+            "Integrated a proprietary analytics system",
+            "Participated on the internal Tech Training Team"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "deZignwright",
+      "roles": [
+        {
+          "title": "Lead Developer",
+          "tenure": "August 2009 - December 2017",
+          "responsibilities": [
+            "Developed web applications with Ruby on Rails",
+            "Developed iOS and macOS applications",
+            "Lead application architecture design sessions",
+            "Managed on-premise servers and network infrastructure",
+            "Routinely communicated directly with clients"
+          ]
+        },
+        {
+          "title": "Multimedia Specialist",
+          "tenure": "August 2007 - July 2009",
+          "responsibilities": [
+            "Created new media assets for web and disc-based delivery",
+            "Shot, directed, and edited client training videos",
+            "Developed Keynote and PowerPoint presentations"
+          ]
+        },
+        {
+          "title": "Graphic Designer",
+          "tenure": "November 2006 - July 2007",
+          "responsibilities": [
+            "Created and updated print assets from brochures to catalogs",
+            "Adhered to style and brand guidelines"
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Kalamazoo Valley Community College",
+      "location": "Kalamazoo, MI",
+      "field": "Graphic Design"
+    },
+    {
+      "school": "Western Michigan University",
+      "location": "Kalamazoo, MI",
+      "field": "Business"
+    },
+    {
+      "school": "Berklee College of Music",
+      "location": "Boston, MA",
+      "field": "Music"
+    }
+  ],
+  "expertise": [
+    "Agile & Scrum",
+    "API Design",
+    "Attention to Detail",
+    "Information Architecture",
+    "Software Architecture",
+    "User Experience"
+  ],
+  "skills": [
+    "Ruby",
+    "Swift",
+    "JavaScript",
+    "PostgreSQL",
+    "Redis",
+    "HTML5",
+    "CSS3",
+    "Heroku",
+    "RSpec",
+    "React",
+    "Node",
+    "Xcode",
+    "AWS",
+    "Tailwind",
+    "Bootstrap",
+    "GitHub"
+  ],
+  "languages": ["CSS", "HTML", "JavaScript", "PostgreSQL", "Ruby", "Swift"],
+  "libraries": ["Bootstrap", "Next.js", "Node", "React", "RSpec", "Ruby on Rails", "Tailwind"],
+  "tools": ["AWS", "GitHub", "Heroku", "Redis", "Vercel", "Vite", "Xcode"]
+}

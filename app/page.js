@@ -1,47 +1,60 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import { Bungee_Outline } from '@next/font/google';
-
-const font = Bungee_Outline({
-  weight: '400',
-});
+import GitHub from 'components/icons/GitHub';
+import LinkedIn from 'components/icons/LinkedIn';
 
 export default function Page() {
   return (
-    <div className='container mx-auto'>
-      <div className='flex justify-center'>
-        <div className='flex items-center h-screen my-auto'>
-          <div className='text-center text-white'>
-            <div className={font.className}>
-              <h1 className='text-6xl sm:text-7xl md:text-8xl xl:text-9xl uppercase mb-2'>
-                Zmyslo
-              </h1>
-            </div>
-            <div className='flex justify-center space-x-2 md:space-x-4 mb-2'>
-              <p className='text-xl lg:text-3xl font-thin'>Ruby</p>
-              <p className='text-xl lg:text-3xl font-thin'>/</p>
-              <p className='text-xl lg:text-3xl font-thin'>Swift</p>
-              <p className='text-xl lg:text-3xl font-thin'>/</p>
-              <p className='text-xl lg:text-3xl font-thin'>JavaScript</p>
-            </div>
-            <div className='flex justify-center items-center space-x-2 md:space-x-4'>
-              <Link
-                href='https://github.com/tomzmyslo'
-                className='text-xl lg:text-3xl font-thin pb-2 hover:text-slate-200'
-                target='_blank'
-              >
-                GitHub
-              </Link>
-              <p className='text-xl lg:text-3xl font-thin pb-2'>/</p>
-              <Link
-                href='https://www.linkedin.com/in/tomzmyslo'
-                className='text-xl lg:text-3xl font-thin pb-2 hover:text-slate-200'
-                target='_blank'
-              >
-                LinkedIn
-              </Link>
-            </div>
+    <div className='flex flex-col justify-center space-y-8 h-full text-indigo-100'>
+      <div className='text-center'>
+        <div className='flex justify-center pb-2'>
+          <div className='rounded-full border-2 lg:border-4 border-indigo-600 overflow-hidden bg-indigo-600'>
+            <Image
+              className='rounded-full mix-blend-hard-light'
+              src='/me.jpeg'
+              alt='Tom Zmyslo'
+              height={144}
+              width={144}
+            />
           </div>
         </div>
+        <h2 className='text-5xl md:text-6xl lg:text-7xl text-indigo-100 font-bold mb-2'>
+          Tom Zmyslo
+        </h2>
+        <h3 className='text-indigo-300 text-lg md:text-xl lg:text-2xl'>
+          Ruby / JavaScript / Swift
+        </h3>
+      </div>
+      <div className='text-center'>
+        <p className='px-4 md:px-24 lg:px-56'>
+          I'm a Software Engineer with over a decade of experience developing for the web, mobile
+          and desktop. I'm currently developing customized incentive programs and customer
+          management tools at{' '}
+          <Link
+            href='https://www.telus.com/agcg'
+            className='text-indigo-600 hover:text-indigo-500 font-semibold'
+            target='_blank'
+          >
+            Telus Agriculture &amp; Consumer Goods
+          </Link>
+          .
+        </p>
+      </div>
+      <div className='flex justify-center space-x-4'>
+        <Link
+          href='https://github.com/tomzmyslo'
+          className='text-indigo-600 hover:text-indigo-500'
+          target='_blank'
+        >
+          <GitHub color='text-indigo-600' size={30} />
+        </Link>
+        <Link
+          href='https://www.linkedin.com/in/tomzmyslo'
+          className='text-indigo-600 hover:text-indigo-500'
+          target='_blank'
+        >
+          <LinkedIn color='text-indigo-600' size={30} />
+        </Link>
       </div>
     </div>
   );
