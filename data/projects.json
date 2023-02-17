@@ -9,7 +9,7 @@
   {
     "name": "jennair.info",
     "medium": "Web Application",
-    "description": "Developed a user-centric product training site, built with Ruby on Rails, that sales associates could register, complete courses developed in-house for the client, and find product information and documents. The site also facilitated the signing of annual sales aggreements and a showroom designer.",
+    "description": "Developed a user-centric product training site, built with Ruby on Rails, that sales associates could register, complete courses developed in-house for the client, and find product information and documents. The site also facilitated the signing of annual sales agreements and a showroom designer.",
     "status": "Deprecated",
     "technologies": ["Ruby on Rails", "MySQL"]
   },
