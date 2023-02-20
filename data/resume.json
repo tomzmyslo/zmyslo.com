@@ -18,13 +18,12 @@
         },
         {
           "title": "Software Engineer",
-          "tenure": "October 2022 - June 2022",
+          "tenure": "October 2019 - June 2022",
           "responsibilities": [
             "Develop new features for custom Program Management product",
             "Develop CQRS-based microservice components in Ruby",
             "Update Ruby-based APIs to support multi-tenancy",
             "Created a JSON transform pipeline using jq",
-            "Developed automatically generated client reports from multiple data sources",
             "CI/CD pipelines with CircleCI and Azure DevOps"
           ]
         }
@@ -97,11 +96,11 @@
     }
   ],
   "expertise": [
-    "Agile & Scrum",
+    "Agile Methodologies",
     "API Design",
     "Attention to Detail",
     "Information Architecture",
-    "Software Architecture",
+    "Troubleshooting",
     "User Experience"
   ],
   "skills": [
