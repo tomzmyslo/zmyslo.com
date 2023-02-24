@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import GitHub from "components/icons/GitHub";
-import LinkedIn from "components/icons/LinkedIn";
+import GitHub from "@components/icons/GitHub";
+import LinkedIn from "@components/icons/LinkedIn";
 
 export default function Page() {
   return (

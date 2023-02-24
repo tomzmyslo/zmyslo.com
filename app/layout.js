@@ -1,9 +1,16 @@
 import Header from "components/Header";
 import Footer from "components/Footer";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import "./global.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata = {
+  title: {
+    default: "Tom Zmyslo",
+    template: "Tom Zmyslo | %s",
+  },
+};
 
 export default function RootLayout({ children }) {
   return (

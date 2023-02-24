@@ -1,16 +1,18 @@
-"use client";
-
 import Link from "next/link";
-import Experience from "components/Experience";
-import Pill from "components/Pill";
-import School from "components/School";
-import Section from "components/Section";
-import Email from "components/icons/Email";
-import GitHub from "components/icons/GitHub";
-import Telephone from "components/icons/Telephone";
-import Website from "components/icons/Website";
-import { formatPhoneNumber } from "utils/formatters";
-import data from "data/resume.json";
+import Experience from "@components/Experience";
+import Pill from "@components/Pill";
+import School from "@components/School";
+import Section from "@components/Section";
+import Email from "@components/icons/Email";
+import GitHub from "@components/icons/GitHub";
+import Telephone from "@components/icons/Telephone";
+import Website from "@components/icons/Website";
+import { formatPhoneNumber } from "@utils/formatters";
+import data from "@data/resume.json";
+
+export const metadata = {
+  title: "Resume",
+};
 
 export default function ResumePage() {
   return (
