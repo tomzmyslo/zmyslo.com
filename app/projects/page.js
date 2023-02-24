@@ -18,8 +18,6 @@ export default function ProjectPage() {
         client need or requirement.
       </p>
 
-      <p>test</p>
-
       {projects.map((project, i) => {
         return <Project key={i} project={project} />;
       })}
