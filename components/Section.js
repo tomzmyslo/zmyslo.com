@@ -1,10 +1,10 @@
 export default function Section({ children, name }) {
   return (
-    <section className="text-indigo-100 py-2">
+    <section>
       {name && (
         <>
           <h2 className="text-xl font-black uppercase">{name}</h2>
-          <hr className="mb-2 border-x border-slate-500" />
+          <hr className="mb-2 border-x border-slate-400" />
         </>
       )}
       {children}

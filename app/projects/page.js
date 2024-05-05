@@ -7,9 +7,9 @@ export const metadata = {
 
 export default function ProjectPage() {
   return (
-    <div className="container px-3 md:px-0 text-indigo-100 mt-14 py-4">
+    <div className="container px-3 md:px-0 mt-14 py-4">
       <h1 className="text-4xl font-bold mb-1">Professional Projects</h1>
-      <hr className="mb-4 border-x border-indigo-100" />
+      <hr className="mb-4 border-x" />
 
       <p className="text-sm md:text-base mb-6">
         The following is a list of past projects I've built for clients. They
