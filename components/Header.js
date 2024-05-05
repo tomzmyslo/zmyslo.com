@@ -8,8 +8,12 @@ import Logo from "@components/Logo";
 export default function Header() {
   const pathname = usePathname();
 
+  function active(currentPath) {
+    return pathname == currentPath ? "border-b-2" : "hover:border-b-2";
+  }
+
   return (
-    <nav className="bg-indigo-600 p-2 w-full fixed z-50 lg:p-0">
+    <nav className="p-2 w-full fixed z-50 bg-blue-800 shadow-md lg:p-0">
       <div className="container mx-auto">
         <div className="flex justify-between items-center h-10 lg:h-14">
           <Link href="/">
@@ -18,17 +22,13 @@ export default function Header() {
           <div className="space-x-4">
             <Link
               href="/projects"
-              className={`pb-2 hover:text-green-400 ${
-                pathname == "/projects" ? "text-green-400" : "text-indigo-100"
-              }`}
+              className={`text-white pb-2 ${active("/projects")}`}
             >
               Projects
             </Link>
             <Link
               href="/resume"
-              className={`pb-2 hover:text-green-400 ${
-                pathname == "/resume" ? "text-green-400" : "text-indigo-100"
-              }`}
+              className={`text-white pb-2 ${active("/resume")}`}
             >
               Resume
             </Link>

@@ -7,20 +7,17 @@ export default function Experience({ details }) {
           return (
             <li key={i} className="flex space-x-2">
               <div className="flex flex-col justify-between items-center">
-                <div className="border-l border-indigo-600 h-full z-0"></div>
+                <div className="h-full zz-0"></div>
               </div>
               <div className="flex flex-col">
                 <div className="flex flex-col mb-1 md:items-baseline">
-                  <p className="font-semibold text-indigo-300">{role.title}</p>
+                  <p className="font-semibold">{role.title}</p>
                   <p className="text-xs italic">{role.tenure}</p>
                 </div>
                 <ul className="mb-2 list-disc list-outside">
                   {role.responsibilities.map((responsibility, i) => {
                     return (
-                      <li
-                        key={i}
-                        className="text-sm ml-6 mb-1 marker:text-green-400"
-                      >
+                      <li key={i} className="text-sm ml-6 mb-1">
                         {responsibility}
                       </li>
                     );

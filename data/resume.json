@@ -2,29 +2,29 @@
   "email": "tom@zmyslo.com",
   "mobile": "2698232295",
   "website": "zmyslo.com",
-  "github": "github.com/tomzmyslo",
+  "github": "tomzmyslo",
   "experience": [
     {
       "company": "TELUS Agriculture & Consumer Goods",
       "roles": [
         {
-          "title": "Software Engineer / Team Lead",
+          "title": "Senior Software Engineer",
           "tenure": "July 2022 - Present",
           "responsibilities": [
-            "Lead agile refinement sessions",
-            "Perform peer code reviews",
-            "Manage code deployments"
+            "Helped define architecture for next-gen Rebate Management product",
+            "Created new API-only Rails application for next-gen Rebate product",
+            "Manage code deployments to stage and production environments",
+            "Migrated CI/CD pipelines to GitHub Actions"
           ]
         },
         {
           "title": "Software Engineer",
           "tenure": "October 2019 - June 2022",
           "responsibilities": [
-            "Develop new features for custom Program Management product",
-            "Develop CQRS-based microservice components in Ruby",
+            "Develop new features for custom Rebate Management product",
             "Update Ruby-based APIs to support multi-tenancy",
-            "Created a JSON transform pipeline using jq",
-            "CI/CD pipelines with CircleCI and Azure DevOps"
+            "Created a JSON transform pipeline using the jq language",
+            "Develop CQRS-based microservice components in Ruby"
           ]
         }
       ]
@@ -121,7 +121,16 @@
     "Bootstrap",
     "GitHub"
   ],
-  "languages": ["CSS", "HTML", "JavaScript", "PostgreSQL", "Ruby", "Swift"],
-  "libraries": ["Bootstrap", "Next.js", "Node", "React", "RSpec", "Ruby on Rails", "Tailwind"],
-  "tools": ["AWS", "GitHub", "Heroku", "Redis", "Vercel", "Vite", "Xcode"]
+  "languages": ["Ruby", "JavaScript", "Swift", "HTML", "CSS", "SQL"],
+  "libraries": [
+    "Ruby on Rails",
+    "React",
+    "Next.js",
+    "Tailwind",
+    "SwiftUI",
+    "Bootstrap",
+    "Node",
+    "RSpec"
+  ],
+  "tools": ["GitHub", "Heroku", "AWS", "Xcode", "Redis", "Vercel", "Vite"]
 }
