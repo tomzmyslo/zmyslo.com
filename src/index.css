@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import 'tailwindcss';
+
+.rubik-normal {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer {
+  @apply text-xs pb-4;
+}
+
+/* h2 {
+  @apply text-lg md:text-xl lg:text-2xl;
+} */
+
+/* section {
+  @apply py-2;
+} */
