@@ -1,33 +1,41 @@
-import { Link, useLocation } from "react-router";
+import { Link, NavLink } from "react-router";
 import Logo from "@/components/Logo";
 
 export default function Header() {
-  const location = useLocation();
-
-  function active(currentPath) {
-    return location == currentPath ? "border-b-2" : "hover:border-b-2";
-  }
-
   return (
-    <nav className="p-2 w-full fixed z-50 bg-blue-800 shadow-md lg:p-0">
+    <nav className="fixed z-50 w-full bg-blue-800 p-2 shadow-md lg:p-0">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center h-10 lg:h-14">
+        <div className="flex h-10 items-center justify-between lg:h-14">
           <Link to="/">
             <Logo />
           </Link>
-          <div className="space-x-4">
-            <Link
-              to="/projects"
-              className={`text-white pb-2 ${active("/projects")}`}
-            >
-              Projects
-            </Link>
-            <Link
-              to="/resume"
-              className={`text-white pb-2 ${active("/resume")}`}
-            >
-              Resume
-            </Link>
+          <div className="space-x-4 text-white">
+            <NavLink to="/projects">
+              {({ isActive }) => (
+                <span
+                  className={
+                    isActive
+                      ? "border-b-2 pb-2"
+                      : "hover:border-b-2 hover:border-white/70 hover:pb-2"
+                  }
+                >
+                  Projects
+                </span>
+              )}
+            </NavLink>
+            <NavLink to="/resume">
+              {({ isActive }) => (
+                <span
+                  className={
+                    isActive
+                      ? "border-b-2 pb-2"
+                      : "hover:border-b-2 hover:border-white/70 hover:pb-2"
+                  }
+                >
+                  Resume
+                </span>
+              )}
+            </NavLink>
           </div>
         </div>
       </div>

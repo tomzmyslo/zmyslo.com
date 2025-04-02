@@ -12,6 +12,8 @@ import data from "@/data/resume.json";
 import resume from "@/assets/tom_zmyslo_resume.pdf";
 
 export default function ResumePage() {
+  document.title = "Resume - Tom Zmyslo";
+
   return (
     <div className="container mt-16 px-4 md:px-0">
       <Section>

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import Layout from "@/routes/layout";
+import NotFound from "@/routes/not_found";
 import HomePage from "@/routes/home";
 import ProjectsPage from "@/routes/projects";
 import ResumePage from "@/routes/resume";
@@ -12,6 +13,7 @@ export default function App() {
           <Route index element={<HomePage />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="resume" element={<ResumePage />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

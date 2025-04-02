@@ -4,6 +4,8 @@ import LinkedIn from "@/components/icons/LinkedIn";
 import selfie from "@/assets/tom_no_background.png";
 
 export default function HomePage() {
+  document.title = "Software Engineer - Tom Zmyslo";
+
   return (
     <div className="flex h-full flex-col justify-center space-y-8">
       <div className="flex flex-col items-center justify-center">
@@ -12,10 +14,10 @@ export default function HomePage() {
           className="mb-2 w-36 rounded-full border-2 border-blue-800 bg-radial from-blue-100 to-blue-800 shadow-lg lg:border-4"
           alt="Tom Zmyslo"
         />
-        <h1 className="mb-2 text-5xl font-bold text-blue-800 md:text-6xl lg:text-7xl">
+        <h1 className="mb-4 text-5xl font-bold text-blue-800 md:text-6xl lg:text-7xl">
           Tom Zmyslo
         </h1>
-        <h2>Ruby / JavaScript / Swift</h2>
+        <h2 className="text-lg font-medium">Ruby / JavaScript / Swift</h2>
       </div>
       <div className="text-center">
         <p className="px-4 md:px-24 lg:px-56">
