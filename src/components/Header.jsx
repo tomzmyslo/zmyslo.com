@@ -3,7 +3,7 @@ import Logo from "@/components/Logo";
 
 export default function Header() {
   return (
-    <nav className="fixed z-50 w-full bg-blue-800 p-2 shadow-md lg:p-0">
+    <nav className="fixed z-50 w-full bg-sky-900 p-2 shadow-md lg:p-0">
       <div className="container mx-auto">
         <div className="flex h-10 items-center justify-between lg:h-14">
           <Link to="/">

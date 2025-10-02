@@ -1,6 +1,6 @@
 export default function Section({ children, name }) {
   return (
-    <section className="py-2">
+    <section className="inline-block w-full py-2 first:pt-0">
       {name && (
         <>
           <h2 className="text-xl font-black uppercase">{name}</h2>

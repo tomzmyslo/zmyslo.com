@@ -3,6 +3,7 @@ import Experience from "@/components/Experience";
 import Pill from "@/components/Pill";
 import School from "@/components/School";
 import Section from "@/components/Section";
+import Skill from "@/components/Skill";
 import Email from "@/components/icons/Email";
 import GitHub from "@/components/icons/GitHub";
 import Telephone from "@/components/icons/Telephone";
@@ -20,7 +21,7 @@ export default function ResumePage() {
         <div className="mb-2 text-center">
           Download a PDF copy{" "}
           <Link
-            className="font-semibold text-blue-800"
+            className="font-semibold text-sky-900"
             to={resume}
             target="_blank"
             rel="noopener noreferrer"
@@ -33,76 +34,61 @@ export default function ResumePage() {
         <hr className="border-x border-slate-400" />
       </Section>
       <Section>
-        <div className="flex flex-col items-start md:flex-row md:items-center md:justify-between md:space-x-8">
+        <div className="flex flex-col items-start md:flex-row md:justify-between md:space-x-10">
           <div className="flex flex-col">
-            <h1>Tom Zmyslo</h1>
-            <p className="text-lg font-semibold">Senior Software Engineer</p>
+            <h1 className="text-xl font-bold">Tom Zmyslo</h1>
+            <p className="font-semibold">Senior Software Engineer</p>
           </div>
           <div className="my-0 text-sm md:my-0 md:flex-1">
-            Senior Software Engineer with over a decade of experience developing for the web, mobile
-            and desktop.Values convention over configuration, pushing envelopes, and working
-            smarter, not harder. Well-versed in the full software development lifecycle, from
-            inception to development to production deployment.
+            Senior Software Engineer with 10+ years of experience building scalable, API-driven
+            applications and modern front-end interfaces. Specialized in Ruby on Rails, React, and
+            cloud-based architectures. Proven track record of designing resilient systems,
+            streamlining deployments, and delivering products that support enterprise-scale
+            operations.
           </div>
         </div>
       </Section>
       <Section>
         <div className="grid grid-cols-2 gap-4 text-sm md:grid-cols-4">
           <div className="flex items-center space-x-2">
-            <Email color="text-blue-800" size={20} />
+            <Email color="text-sky-900" size={20} />
             <a href={`mailto:${data.email}`}>{data.email}</a>
           </div>
           <div className="flex items-center space-x-2">
-            <Telephone color="text-blue-800" size={20} />
+            <Telephone color="text-sky-900" size={20} />
             <a href={`tel:${data.mobile}`}>{formatPhoneNumber(data.mobile)}</a>
           </div>
           <div className="flex items-center space-x-2">
-            <Website color="text-blue-800" size={20} />
+            <Website color="text-sky-900" size={20} />
             <a href={`https://${data.website}`} target="_blank">
               {data.website}
             </a>
           </div>
           <div className="flex items-center space-x-2">
-            <GitHub color="text-blue-800" size={20} />
+            <GitHub color="text-sky-900" size={20} />
             <a href={`https://github.com/${data.github}`} target="_blank">
               {data.github}
             </a>
           </div>
         </div>
       </Section>
-      <Section name="Areas of Expertise">
-        {data.expertise.map((item, i) => {
-          return (
-            <Pill key={i} backgroundColor="bg-blue-800" content={item} textColor="text-white" />
-          );
-        })}
-      </Section>
-      <Section name="Programming Languages">
-        {data.languages.map((lang, i) => {
-          return (
-            <Pill key={i} backgroundColor="bg-blue-800" content={lang} textColor="text-white" />
-          );
-        })}
-      </Section>
-      <Section name="Frameworks & Libraries">
-        {data.libraries.map((lib, i) => {
-          return (
-            <Pill key={i} backgroundColor="bg-blue-800" content={lib} textColor="text-white" />
-          );
-        })}
-      </Section>
-      <Section name="Platforms & Tools">
-        {data.tools.map((tool, i) => {
-          return (
-            <Pill key={i} backgroundColor="bg-blue-800" content={tool} textColor="text-white" />
-          );
-        })}
-      </Section>
-      <Section name="Professional Experience">
+      <Section name="Experience">
         {data.experience.map((item, i) => {
           return <Experience key={i} details={item} />;
         })}
       </Section>
+      <Section name="Skills">
+        {data.skills.map((section, i) => (
+          <Skill key={i} name={section.name}>
+            <div className="space-x-1">
+              {section.items.map((item, i) => (
+                <Pill key={i} content={item} color="sky" />
+              ))}
+            </div>
+          </Skill>
+        ))}
+      </Section>
+
       <Section name="Education">
         {data.education.map((item, i) => {
           return <School key={i} name={item.school} location={item.location} field={item.field} />;
