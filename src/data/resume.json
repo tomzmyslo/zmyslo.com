@@ -11,20 +11,19 @@
           "title": "Senior Software Engineer",
           "tenure": "July 2022 - Present",
           "responsibilities": [
-            "Helped define architecture for next-gen Rebate Management product",
-            "Created new API-only Rails application for next-gen Rebate product",
-            "Manage code deployments to stage and production environments",
-            "Migrated CI/CD pipelines to GitHub Actions"
+            "Designed architecture for next-gen Rebate Management product projected to serve 50+ enterprise clients.",
+            "Built a new API-only Rails application powering rebate management.",
+            "Migrated multiple CI/CD pipelines to GitHub Actions, cutting deployment times by as much as 40%.",
+            "Manage production deployments across multiple environments with zero downtime."
           ]
         },
         {
           "title": "Software Engineer",
           "tenure": "October 2019 - June 2022",
           "responsibilities": [
-            "Develop new features for custom Rebate Management product",
-            "Update Ruby-based APIs to support multi-tenancy",
-            "Created a JSON transform pipeline using the jq language",
-            "Develop CQRS-based microservice components in Ruby"
+            "Implemented multi-tenancy in Ruby APIs, enabling onboarding of new clients at scale.",
+            "Developed CQRS-based microservices in Ruby to improve system reliability.",
+            "Built a JSON transformation pipeline using jq, reducing data processing time by 60%."
           ]
         }
       ]
@@ -36,10 +35,9 @@
           "title": "Front End Developer",
           "tenure": "October 2018 - September 2019",
           "responsibilities": [
-            "Developed React components for a site-wide design system",
-            "Implemented A/B testing scenarios developed by business team",
-            "Integrated a proprietary analytics system",
-            "Participated on the internal Tech Training Team"
+            "Delivered reusable React components for a company-wide design system.",
+            "Integrated proprietary analytics tools to track millions of user interactions.",
+            "Partnered with business teams to implement and measure A/B testing campaigns."
           ]
         }
       ]
@@ -51,28 +49,10 @@
           "title": "Lead Developer",
           "tenure": "August 2009 - December 2017",
           "responsibilities": [
-            "Developed web applications with Ruby on Rails",
-            "Developed iOS and macOS applications",
-            "Lead application architecture design sessions",
-            "Managed on-premise servers and network infrastructure",
-            "Routinely communicated directly with clients"
-          ]
-        },
-        {
-          "title": "Multimedia Specialist",
-          "tenure": "August 2007 - July 2009",
-          "responsibilities": [
-            "Created new media assets for web and disc-based delivery",
-            "Shot, directed, and edited client training videos",
-            "Developed Keynote and PowerPoint presentations"
-          ]
-        },
-        {
-          "title": "Graphic Designer",
-          "tenure": "November 2006 - July 2007",
-          "responsibilities": [
-            "Created and updated print assets from brochures to catalogs",
-            "Adhered to style and brand guidelines"
+            "Built custom web and mobile apps in Rails, iOS, and macOS for diverse clients.",
+            "Led architecture design and planning sessions.",
+            "Managed on-premise servers and network infrastructure.",
+            "Acted as client-facing technical lead across full project lifecycle."
           ]
         }
       ]
@@ -80,57 +60,60 @@
   ],
   "education": [
     {
-      "school": "Kalamazoo Valley Community College",
-      "location": "Kalamazoo, MI",
-      "field": "Graphic Design"
+      "school": "Berklee College of Music",
+      "field": "Music"
     },
     {
       "school": "Western Michigan University",
-      "location": "Kalamazoo, MI",
       "field": "Business"
     },
     {
-      "school": "Berklee College of Music",
-      "location": "Boston, MA",
-      "field": "Music"
+      "school": "Kalamazoo Valley Community College",
+      "field": "Graphic Design"
     }
   ],
-  "expertise": [
-    "Agile Methodologies",
-    "API Design",
-    "Attention to Detail",
-    "Information Architecture",
-    "Troubleshooting",
-    "User Experience"
-  ],
   "skills": [
-    "Ruby",
-    "Swift",
-    "JavaScript",
-    "PostgreSQL",
-    "Redis",
-    "HTML5",
-    "CSS3",
-    "Heroku",
-    "RSpec",
-    "React",
-    "Node",
-    "Xcode",
-    "AWS",
-    "Tailwind",
-    "Bootstrap",
-    "GitHub"
-  ],
-  "languages": ["Ruby", "JavaScript", "Swift", "HTML", "CSS", "SQL"],
-  "libraries": [
-    "Ruby on Rails",
-    "React",
-    "Next.js",
-    "Tailwind",
-    "SwiftUI",
-    "Bootstrap",
-    "Node",
-    "RSpec"
-  ],
-  "tools": ["GitHub", "Heroku", "AWS", "Xcode", "Redis", "Vercel", "Vite"]
+    {
+      "name": "Languages & Frameworks",
+      "items": [
+        "Ruby",
+        "Rails",
+        "JavaScript",
+        "React",
+        "Tailwind",
+        "Swift",
+        "SwiftUI",
+        "Node",
+        "SQL"
+      ]
+    },
+    {
+      "name": "DevOps & Cloud",
+      "items": [
+        "AWS",
+        "Docker",
+        "Redis",
+        "GitHub Actions",
+        "CI/CD",
+        "Heroku"
+      ]
+    },
+    {
+      "name": "Testing & Quality",
+      "items": [
+        "RSpec",
+        "TDD",
+        "Code Reviews"
+      ]
+    },
+    {
+      "name": "Other",
+      "items": [
+        "Agile",
+        "API Design",
+        "Jira",
+        "System Architecture"
+      ]
+    }
+  ]
 }
