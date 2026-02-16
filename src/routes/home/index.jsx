@@ -9,27 +9,28 @@ export default function HomePage() {
   return (
     <div className="flex h-full flex-col justify-center space-y-8">
       <div className="flex flex-col items-center justify-center">
-        <img
-          src={selfie}
-          className="mb-2 w-36 rounded-full border-2 border-sky-900 bg-radial from-sky-100 to-sky-900 shadow-lg lg:border-4"
-          alt="Tom Zmyslo"
-        />
         <h1 className="mb-4 text-5xl font-bold text-sky-900 md:text-6xl lg:text-7xl">Tom Zmyslo</h1>
         <h2 className="text-lg font-medium">Ruby / JavaScript / Swift</h2>
       </div>
-      <div className="text-center">
-        <p className="px-4 md:px-24 lg:px-56">
-          I'm a Senior Software Engineer with over a decade of experience developing for the web,
-          mobile and desktop. I'm currently developing customized rebate management programs and
-          customer management tools at{" "}
-          <Link
-            to="https://www.telus.com/agcg"
-            className="font-semibold text-sky-900"
-            target="_blank"
-          >
-            Telus Agriculture &amp; Consumer Goods
-          </Link>
-          .
+      <div className="text-basex text-center text-balance">
+        <p className="mb-3 px-6 md:px-24 lg:px-56">
+          I’m a Senior Software Engineer with over a decade of experience designing and building
+          scalable, API-driven systems and modern web applications.
+        </p>
+
+        <p className="mb-3 px-6 md:px-24 lg:px-56">
+          I specialize in backend architecture, distributed systems, and delivering reliable
+          software that supports real-world operations at scale.
+        </p>
+
+        <p className="mb-3 px-6 md:px-24 lg:px-56">
+          I’ve led development on enterprise platforms, improved deployment and reliability
+          practices, and enjoy working across the stack — from system design through production.
+        </p>
+
+        <p className="mb-3 px-6 md:px-24 lg:px-56">
+          Currently exploring my next opportunity while continuing to build, learn, and occasionally
+          spending time brewing beer.
         </p>
       </div>
       <div className="flex justify-center space-x-4">

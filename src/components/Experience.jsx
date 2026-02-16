@@ -1,6 +1,6 @@
 export default function Experience({ details }) {
   return (
-    <div className="mb-0">
+    <div className="mb-2">
       <h3 className="text-lg font-bold">{details.company}</h3>
       <ul className="ml-1 list-disc">
         {details.roles.map((role, i) => {
@@ -8,7 +8,7 @@ export default function Experience({ details }) {
             <li key={i} className="flex space-x-2">
               <div className="ml-1 flex flex-col">
                 <div className="mb-1 flex flex-col md:items-baseline">
-                  <p className="font-semibold">{role.title}</p>
+                  <p className="text-sm font-semibold">{role.title}</p>
                   <p className="text-xs italic">{role.tenure}</p>
                 </div>
                 <ul className="mb-2 list-outside list-disc">
