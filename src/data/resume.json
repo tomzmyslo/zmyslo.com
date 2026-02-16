@@ -3,27 +3,59 @@
   "mobile": "2698232295",
   "website": "zmyslo.com",
   "github": "tomzmyslo",
+  "competencies": [
+    "Backend Architecture",
+    "API Design (REST/JSON)",
+    "Distributed Systems",
+    "Microservices",
+    "Full-Stack Development",
+    "Cloud Infrastructure",
+    "CI/CD Automation",
+    "Performance Optimization",
+    "Multi-Tenancy",
+    "Observability",
+    "System Reliability",
+    "Technical Leadership"
+  ],
   "experience": [
+    {
+      "company": "Career Transition & Independent Work",
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "tenure": "November 2025 - Present",
+          "responsibilities": [
+            "Continuing hands-on software development through personal projects and technical exploration, focusing on backend systems, APIs, and deployment workflows.",
+            "Supporting operations at a local brewery while evaluating next software engineering opportunity.",
+            "Maintaining technical momentum through system design practice, experimentation, and ongoing learning."
+          ]
+        }
+      ]
+    },
     {
       "company": "TELUS Agriculture & Consumer Goods",
       "roles": [
         {
           "title": "Senior Software Engineer",
-          "tenure": "July 2022 - Present",
+          "tenure": "July 2022 - November 2025",
           "responsibilities": [
-            "Designed architecture for next-gen Rebate Management product projected to serve 50+ enterprise clients.",
-            "Built a new API-only Rails application powering rebate management.",
-            "Migrated multiple CI/CD pipelines to GitHub Actions, cutting deployment times by as much as 40%.",
-            "Manage production deployments across multiple environments with zero downtime."
+            "Led architecture and technical design for next-generation Rebate Management platform serving 50+ enterprise customers.",
+            "Built and maintained API-only Ruby on Rails services supporting high-volume financial workflows.",
+            "Drove CI/CD modernization by migrating pipelines to GitHub Actions, reducing deployment time by ~40%.",
+            "Managed production releases across multiple environments with zero-downtime deployment strategies.",
+            "Collaborated cross-functionally with product and stakeholders to define requirements and deliver roadmap initiatives.",
+            "Improved system reliability through monitoring, automated testing, and operational best practices."
           ]
         },
         {
           "title": "Software Engineer",
           "tenure": "October 2019 - June 2022",
           "responsibilities": [
-            "Implemented multi-tenancy in Ruby APIs, enabling onboarding of new clients at scale.",
-            "Developed CQRS-based microservices in Ruby to improve system reliability.",
-            "Built a JSON transformation pipeline using jq, reducing data processing time by 60%."
+            "Implemented multi-tenant architecture enabling scalable onboarding of enterprise clients.",
+            "Developed CQRS-oriented microservices improving performance and fault isolation.",
+            "Built JSON data transformation pipeline using jq, reducing processing time by ~60%.",
+            "Contributed to API design, performance tuning, and production incident response.",
+            "Participated in code reviews and helped establish engineering standards."
           ]
         }
       ]
@@ -35,9 +67,10 @@
           "title": "Front End Developer",
           "tenure": "October 2018 - September 2019",
           "responsibilities": [
-            "Delivered reusable React components for a company-wide design system.",
-            "Integrated proprietary analytics tools to track millions of user interactions.",
-            "Partnered with business teams to implement and measure A/B testing campaigns."
+            "Built reusable React components for enterprise design system used across multiple product teams.",
+            "Integrated analytics instrumentation capturing millions of user interactions.",
+            "Partnered with product teams to implement and evaluate A/B experiments.",
+            "Improved front-end performance and maintainability through component refactoring."
           ]
         }
       ]
@@ -49,10 +82,11 @@
           "title": "Lead Developer",
           "tenure": "August 2009 - December 2017",
           "responsibilities": [
-            "Built custom web and mobile apps in Rails, iOS, and macOS for diverse clients.",
-            "Led architecture design and planning sessions.",
-            "Managed on-premise servers and network infrastructure.",
-            "Acted as client-facing technical lead across full project lifecycle."
+            "Designed and delivered custom web, iOS, and macOS applications using Rails and native technologies.",
+            "Led technical discovery, architecture planning, and client consultations.",
+            "Managed infrastructure including on-premise servers, deployments, and networking.",
+            "Delivered full lifecycle solutions from requirements through production support.",
+            "Served as primary technical advisor for multiple client engagements."
           ]
         }
       ]
@@ -74,45 +108,58 @@
   ],
   "skills": [
     {
-      "name": "Languages & Frameworks",
+      "name": "Languages",
       "items": [
         "Ruby",
-        "Rails",
-        "JavaScript",
-        "React",
-        "Tailwind",
-        "Swift",
-        "SwiftUI",
-        "Node",
-        "SQL"
+        "JavaScript/TypeScript",
+        "SQL",
+        "Swift"
       ]
     },
     {
-      "name": "DevOps & Cloud",
+      "name": "Frameworks",
+      "items": [
+        "Ruby on Rails",
+        "React",
+        "Node.js",
+        "Tailwind CSS",
+        "SwiftUI"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
       "items": [
         "AWS",
         "Docker",
-        "Redis",
-        "GitHub Actions",
         "CI/CD",
+        "GitHub Actions",
         "Heroku"
       ]
     },
     {
-      "name": "Testing & Quality",
+      "name": "Data & Messaging",
+      "items": [
+        "Redis",
+        "Background Jobs",
+        "REST APIs"
+      ]
+    },
+    {
+      "name": "Testing",
       "items": [
         "RSpec",
         "TDD",
+        "Automated Testing",
         "Code Reviews"
       ]
     },
     {
-      "name": "Other",
+      "name": "Practices",
       "items": [
         "Agile",
-        "API Design",
-        "Jira",
-        "System Architecture"
+        "System Design",
+        "Observability",
+        "Incident Response"
       ]
     }
   ]

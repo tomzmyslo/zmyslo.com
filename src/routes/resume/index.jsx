@@ -33,6 +33,7 @@ export default function ResumePage() {
         </div>
         <hr className="border-x border-slate-400" />
       </Section>
+
       <Section>
         <div className="flex flex-col items-start md:flex-row md:justify-between md:space-x-10">
           <div className="flex flex-col">
@@ -40,14 +41,16 @@ export default function ResumePage() {
             <p className="font-semibold">Senior Software Engineer</p>
           </div>
           <div className="my-0 text-sm md:my-0 md:flex-1">
-            Senior Software Engineer with 10+ years of experience building scalable, API-driven
-            applications and modern front-end interfaces. Specialized in Ruby on Rails, React, and
-            cloud-based architectures. Proven track record of designing resilient systems,
-            streamlining deployments, and delivering products that support enterprise-scale
-            operations.
+            Senior Software Engineer with 10+ years of experience designing and delivering scalable,
+            API-first platforms and modern web applications. Deep expertise in Ruby on Rails, React,
+            distributed systems, and cloud infrastructure. Known for leading architecture decisions,
+            improving deployment reliability, and delivering high-impact features for enterprise
+            clients. Strong collaborator who partners with product, design, and stakeholders to ship
+            resilient, maintainable software.
           </div>
         </div>
       </Section>
+
       <Section>
         <div className="grid grid-cols-2 gap-4 text-sm md:grid-cols-4">
           <div className="flex items-center space-x-2">
@@ -72,11 +75,21 @@ export default function ResumePage() {
           </div>
         </div>
       </Section>
+
+      <Section name="Core Compentencies">
+        <div className="flex flex-wrap gap-1">
+          {data.competencies.map((item, i) => (
+            <Pill key={i} content={item} color="sky" />
+          ))}
+        </div>
+      </Section>
+
       <Section name="Experience">
         {data.experience.map((item, i) => {
           return <Experience key={i} details={item} />;
         })}
       </Section>
+
       <Section name="Skills">
         {data.skills.map((section, i) => (
           <Skill key={i} name={section.name}>
