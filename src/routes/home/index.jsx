@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import GitHub from "@/components/icons/GitHub";
 import LinkedIn from "@/components/icons/LinkedIn";
-import selfie from "@/assets/tom_no_background.png";
+// import selfie from "@/assets/tom_no_background.png";
 
 export default function HomePage() {
   document.title = "Software Engineer - Tom Zmyslo";
@@ -14,8 +14,8 @@ export default function HomePage() {
       </div>
       <div className="text-basex text-center text-balance">
         <p className="mb-3 px-6 md:px-24 lg:px-56">
-          I’m a Senior Software Engineer with over a decade of experience designing and building
-          scalable, API-driven systems and modern web applications.
+          I’m a Senior Software Engineer with over a 15 years of experience designing and building
+          scalable, API-driven systems and modern web and mobile applications.
         </p>
 
         <p className="mb-3 px-6 md:px-24 lg:px-56">

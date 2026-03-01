@@ -41,7 +41,7 @@ export default function ResumePage() {
             <p className="font-semibold">Senior Software Engineer</p>
           </div>
           <div className="my-0 text-sm md:my-0 md:flex-1">
-            Senior Software Engineer with 10+ years of experience designing and delivering scalable,
+            Senior Software Engineer with 15+ years of experience designing and delivering scalable,
             API-first platforms and modern web applications. Deep expertise in Ruby on Rails, React,
             distributed systems, and cloud infrastructure. Known for leading architecture decisions,
             improving deployment reliability, and delivering high-impact features for enterprise
@@ -77,7 +77,7 @@ export default function ResumePage() {
       </Section>
 
       <Section name="Core Compentencies">
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap gap-1.5">
           {data.competencies.map((item, i) => (
             <Pill key={i} content={item} color="sky" />
           ))}
