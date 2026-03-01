@@ -3,6 +3,7 @@ import Layout from "@/routes/layout";
 import NotFound from "@/routes/not_found";
 import HomePage from "@/routes/home";
 import ProjectsPage from "@/routes/projects";
+import ProjectPage from "@/routes/projects/show";
 import ResumePage from "@/routes/resume";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="projects" element={<ProjectsPage />} />
+          <Route path="projects/:slug" element={<ProjectPage />} />
           <Route path="resume" element={<ResumePage />} />
           <Route path="*" element={<NotFound />} />
         </Route>

@@ -25,8 +25,8 @@
           "title": "Senior Software Engineer",
           "tenure": "November 2025 - Present",
           "responsibilities": [
+            "Supporting cellaring and packaging operations at an award-winning local brewery.",
             "Continuing hands-on software development through personal projects and technical exploration, focusing on backend systems, APIs, and deployment workflows.",
-            "Supporting operations at a local brewery while evaluating next software engineering opportunity.",
             "Maintaining technical momentum through system design practice, experimentation, and ongoing learning."
           ]
         }
@@ -80,7 +80,7 @@
       "roles": [
         {
           "title": "Lead Developer",
-          "tenure": "August 2009 - December 2017",
+          "tenure": "October 2006 - December 2017",
           "responsibilities": [
             "Designed and delivered custom web, iOS, and macOS applications using Rails and native technologies.",
             "Led technical discovery, architecture planning, and client consultations.",
@@ -94,16 +94,16 @@
   ],
   "education": [
     {
-      "school": "Berklee College of Music",
-      "field": "Music"
+      "school": "Kalamazoo Valley Community College",
+      "field": "Graphic Design"
     },
     {
       "school": "Western Michigan University",
       "field": "Business"
     },
     {
-      "school": "Kalamazoo Valley Community College",
-      "field": "Graphic Design"
+      "school": "Berklee College of Music",
+      "field": "Music"
     }
   ],
   "skills": [
