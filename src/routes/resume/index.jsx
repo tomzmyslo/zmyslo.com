@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router";
 import Experience from "@/components/Experience";
 import Pill from "@/components/Pill";
@@ -13,7 +14,9 @@ import data from "@/data/resume.json";
 import resume from "@/assets/tom_zmyslo_resume.pdf";
 
 export default function ResumePage() {
-  document.title = "Resume - Tom Zmyslo";
+  useEffect(() => {
+    document.title = "Resume - Tom Zmyslo";
+  }, []);
 
   return (
     <div className="container mt-16 px-4 md:px-0">
@@ -76,21 +79,7 @@ export default function ResumePage() {
         </div>
       </Section>
 
-      <Section name="Core Compentencies">
-        <div className="flex flex-wrap gap-1.5">
-          {data.competencies.map((item, i) => (
-            <Pill key={i} content={item} color="sky" />
-          ))}
-        </div>
-      </Section>
-
-      <Section name="Experience">
-        {data.experience.map((item, i) => {
-          return <Experience key={i} details={item} />;
-        })}
-      </Section>
-
-      <Section name="Skills">
+      <Section name="Technical Skills">
         {data.skills.map((section, i) => (
           <Skill key={i} name={section.name}>
             <div className="space-x-1">
@@ -100,6 +89,20 @@ export default function ResumePage() {
             </div>
           </Skill>
         ))}
+      </Section>
+
+      {/* <Section name="Core Compentencies">
+        <div className="flex flex-wrap gap-1.5">
+          {data.competencies.map((item, i) => (
+            <Pill key={i} content={item} color="sky" />
+          ))}
+        </div>
+      </Section>*/}
+
+      <Section name="Experience">
+        {data.experience.map((item, i) => {
+          return <Experience key={i} details={item} />;
+        })}
       </Section>
 
       <Section name="Education">
