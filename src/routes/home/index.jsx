@@ -1,10 +1,13 @@
+import { useEffect } from "react";
 import { Link } from "react-router";
 import GitHub from "@/components/icons/GitHub";
 import LinkedIn from "@/components/icons/LinkedIn";
 // import selfie from "@/assets/tom_no_background.png";
 
 export default function HomePage() {
-  document.title = "Software Engineer - Tom Zmyslo";
+  useEffect(() => {
+    document.title = "Software Engineer - Tom Zmyslo";
+  }, []);
 
   return (
     <div className="flex h-full flex-col justify-center space-y-8">

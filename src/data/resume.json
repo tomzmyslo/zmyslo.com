@@ -19,20 +19,6 @@
   ],
   "experience": [
     {
-      "company": "Career Transition & Independent Work",
-      "roles": [
-        {
-          "title": "Senior Software Engineer",
-          "tenure": "November 2025 - Present",
-          "responsibilities": [
-            "Supporting cellaring and packaging operations at an award-winning local brewery.",
-            "Continuing hands-on software development through personal projects and technical exploration, focusing on backend systems, APIs, and deployment workflows.",
-            "Maintaining technical momentum through system design practice, experimentation, and ongoing learning."
-          ]
-        }
-      ]
-    },
-    {
       "company": "TELUS Agriculture & Consumer Goods",
       "roles": [
         {
@@ -41,7 +27,7 @@
           "responsibilities": [
             "Led architecture and technical design for next-generation Rebate Management platform serving 50+ enterprise customers.",
             "Built and maintained API-only Ruby on Rails services supporting high-volume financial workflows.",
-            "Drove CI/CD modernization by migrating pipelines to GitHub Actions, reducing deployment time by ~40%.",
+            "Reduced deployment time by ~40% by modernizing CI/CD pipelines and migrating to GitHub Actions.",
             "Managed production releases across multiple environments with zero-downtime deployment strategies.",
             "Collaborated cross-functionally with product and stakeholders to define requirements and deliver roadmap initiatives.",
             "Improved system reliability through monitoring, automated testing, and operational best practices."
@@ -53,7 +39,7 @@
           "responsibilities": [
             "Implemented multi-tenant architecture enabling scalable onboarding of enterprise clients.",
             "Developed CQRS-oriented microservices improving performance and fault isolation.",
-            "Built JSON data transformation pipeline using jq, reducing processing time by ~60%.",
+            "Decreased data processing time by ~60% by engineering a high-performance JSON transformation pipeline using jq.",
             "Contributed to API design, performance tuning, and production incident response.",
             "Participated in code reviews and helped establish engineering standards."
           ]
@@ -108,56 +94,35 @@
   ],
   "skills": [
     {
-      "name": "Languages",
+      "name": "Languages & Frameworks",
       "items": [
         "Ruby",
-        "JavaScript/TypeScript",
-        "SQL",
-        "Swift"
-      ]
-    },
-    {
-      "name": "Frameworks",
-      "items": [
         "Ruby on Rails",
         "React",
+        "JavaScript/TypeScript",
         "Node.js",
-        "Tailwind CSS",
-        "SwiftUI"
+        "Swift",
+        "SwiftUI",
+        "Tailwind CSS"
       ]
     },
     {
-      "name": "Cloud & DevOps",
+      "name": "Backend Architecture",
+      "items": [
+        "Distributed Systems",
+        "Microservices",
+        "API Design (REST/JSON)",
+        "Multi-Tenancy"
+      ]
+    },
+    {
+      "name": "DevOps & Reliability",
       "items": [
         "AWS",
         "Docker",
-        "CI/CD",
         "GitHub Actions",
-        "Heroku"
-      ]
-    },
-    {
-      "name": "Data & Messaging",
-      "items": [
-        "Redis",
-        "Background Jobs",
-        "REST APIs"
-      ]
-    },
-    {
-      "name": "Testing",
-      "items": [
-        "RSpec",
-        "TDD",
-        "Automated Testing",
-        "Code Reviews"
-      ]
-    },
-    {
-      "name": "Practices",
-      "items": [
-        "Agile",
-        "System Design",
+        "CI/CD",
+        "Heroku",
         "Observability",
         "Incident Response"
       ]

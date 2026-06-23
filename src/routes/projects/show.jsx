@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link, useParams } from "react-router";
 import Project from "@/components/Project";
 import projects from "@/data/projects.json";
@@ -5,6 +6,9 @@ import projects from "@/data/projects.json";
 export default function ProjectPage() {
   let { slug } = useParams();
   let project = projects.find((project) => project.slug === slug);
+  useEffect(() => {
+    document.title = `${project.name} - Tom Zmyslo`;
+  }, [project.name]);
 
   return (
     <div className="container mt-14 px-3 py-4 md:px-0">
