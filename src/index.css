@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
 
 @source inline("bg-sky-100");
 @source inline("bg-sky-700");
@@ -9,4 +9,10 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* Keep keyboard navigation visible across the shared navigation and page links. */
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
 }

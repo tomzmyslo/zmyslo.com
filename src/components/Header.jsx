@@ -3,53 +3,27 @@ import Logo from "@/components/Logo";
 
 export default function Header() {
   return (
-    <nav className="fixed z-50 w-full bg-sky-900 p-2 shadow-md lg:p-0">
-      <div className="container mx-auto">
-        <div className="flex h-10 items-center justify-between lg:h-14">
-          <Link to="/">
-            <Logo />
-          </Link>
-          <div className="space-x-4 text-white">
-            <NavLink to="/brewing">
-              {({ isActive }) => (
-                <span
-                  className={
-                    isActive
-                      ? "border-b-2 pb-2"
-                      : "hover:border-b-2 hover:border-white/70 hover:pb-2"
-                  }
-                >
-                  Brewing
-                </span>
-              )}
+    <nav aria-label="Main navigation" className="fixed z-50 w-full bg-sky-900 text-white shadow-sm">
+      <div className="container mx-auto flex h-14 items-center justify-between px-4 md:px-0">
+        <Link to="/" aria-label="Tom Zmyslo home">
+          <Logo />
+        </Link>
+        <div className="flex h-full items-center gap-4 text-sm sm:gap-6 sm:text-base">
+          {[
+            ["/brewing", "Brewing"],
+            ["/projects", "Projects"],
+            ["/resume", "Resume"],
+          ].map(([to, label]) => (
+            <NavLink
+              key={to}
+              to={to}
+              className={({ isActive }) =>
+                `flex h-full items-center border-b-2 pt-0.5 transition-colors ${isActive ? "border-white" : "border-transparent text-sky-100 hover:border-white/70 hover:text-white"}`
+              }
+            >
+              {label}
             </NavLink>
-            <NavLink to="/projects">
-              {({ isActive }) => (
-                <span
-                  className={
-                    isActive
-                      ? "border-b-2 pb-2"
-                      : "hover:border-b-2 hover:border-white/70 hover:pb-2"
-                  }
-                >
-                  Projects
-                </span>
-              )}
-            </NavLink>
-            <NavLink to="/resume">
-              {({ isActive }) => (
-                <span
-                  className={
-                    isActive
-                      ? "border-b-2 pb-2"
-                      : "hover:border-b-2 hover:border-white/70 hover:pb-2"
-                  }
-                >
-                  Resume
-                </span>
-              )}
-            </NavLink>
-          </div>
+          ))}
         </div>
       </div>
     </nav>
