@@ -1,11 +1,8 @@
 export default function Section({ children, name }) {
   return (
-    <section className="inline-block w-full py-3 first:pt-0">
+    <section className="min-w-0">
       {name && (
-        <>
-          <h2 className="text-xl font-black uppercase">{name}</h2>
-          <hr className="mb-3 border-x border-slate-400" />
-        </>
+        <h2 className="mb-6 border-b border-slate-300 pb-3 text-xl font-bold uppercase">{name}</h2>
       )}
       {children}
     </section>
