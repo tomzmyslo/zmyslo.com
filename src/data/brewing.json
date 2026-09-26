@@ -1,0 +1,77 @@
+{
+  "accolades": [
+    {
+      "name": "The Livery Pumpkin Beer Homebrew Competition",
+      "beer": "PI",
+      "place": "Third Place",
+      "date": "2015-08"
+    },
+    {
+      "name": "2016 Cadillac Beer Festival Homebrew Competition",
+      "beer": "Imperial Stout",
+      "place": "Honorable Mention",
+      "date": "2016-08"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Cicerone Level 1",
+      "subtitle": "Certified Beer Server",
+      "date": "2025-05-24"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Fort Myers Brewing Company",
+      "roles": [
+        {
+          "title": "Lead Packaging Tech/Cellarman",
+          "tenure": "February 2026 - Present",
+          "responsibilities": [
+            "Setup, run, and shut down the canning line",
+            "Fill kegs for distribution and in-house",
+            "Clean fermentors and brite tanks"
+          ]
+        },
+        {
+          "title": "Keg Washer",
+          "tenure": "November 2025 - February 2026",
+          "responsibilities": [
+            "Wash dirty kegs and stack them to be filled",
+            "Stack and pack can on the canning line",
+            "Clean the brewery floors at the end of each day"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Triple C Brewing Company",
+      "roles": [
+        {
+          "title": "Bar Back",
+          "tenure": "March 2025 - June 2025",
+          "responsibilities": [
+            "Collect and clean taproom glassware",
+            "Change out and stock kegs in walk-in",
+            "Assist in maintaining taproom and outdoor seating areas"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "The Dreamchaser's Brewery",
+      "roles": [
+        {
+          "title": "Bartender",
+          "tenure": "August 2023 - March 2024",
+          "responsibilities": [
+            "Serve customers and ...",
+            "Open, close, and maintain tap room",
+            "Change kegs",
+            "Count drawer"
+          ]
+        }
+      ]
+    }
+  ]
+}
