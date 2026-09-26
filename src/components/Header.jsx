@@ -10,6 +10,19 @@ export default function Header() {
             <Logo />
           </Link>
           <div className="space-x-4 text-white">
+            <NavLink to="/brewing">
+              {({ isActive }) => (
+                <span
+                  className={
+                    isActive
+                      ? "border-b-2 pb-2"
+                      : "hover:border-b-2 hover:border-white/70 hover:pb-2"
+                  }
+                >
+                  Brewing
+                </span>
+              )}
+            </NavLink>
             <NavLink to="/projects">
               {({ isActive }) => (
                 <span
