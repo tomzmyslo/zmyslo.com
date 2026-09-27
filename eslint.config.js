@@ -40,7 +40,7 @@ export default defineConfig([
 
     settings: {
       react: {
-        version: "18.2",
+        version: "detect",
       },
     },
 
@@ -49,7 +49,7 @@ export default defineConfig([
     },
 
     rules: {
-      "no-unused-vars": "off",
+      "no-unused-vars": "error",
       "react/prop-types": "off",
       "react/jsx-no-target-blank": "off",
       "react-refresh/only-export-components": [
@@ -60,6 +60,10 @@ export default defineConfig([
       ],
     },
   },
+  {
+    files: ["*.config.js", "tests/**/*.js"],
+    languageOptions: { globals: globals.node },
+  },
   // Modern global ignore syntax
-  globalIgnores(["**/dist", "**/old", "**/.eslintrc.cjs"]),
+  globalIgnores(["**/dist", "**/old", "**/.eslintrc.cjs", "playwright-report", "test-results"]),
 ]);
