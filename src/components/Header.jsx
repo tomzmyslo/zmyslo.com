@@ -4,6 +4,12 @@ import Logo from "@/components/Logo";
 export default function Header() {
   return (
     <nav aria-label="Main navigation" className="fixed z-50 w-full bg-sky-900 text-white shadow-sm">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-sky-900"
+      >
+        Skip to content
+      </a>
       <div className="container mx-auto flex h-14 items-center justify-between px-4 md:px-0">
         <Link to="/" aria-label="Tom Zmyslo home">
           <Logo />

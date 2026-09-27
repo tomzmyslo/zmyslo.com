@@ -9,7 +9,11 @@ export default function ProjectsPage() {
     document.title = "Projects - Tom Zmyslo";
   }, []);
   return (
-    <main className="container mt-14 px-4 pt-8 pb-12 md:px-0 md:pt-12">
+    <main
+      id="main-content"
+      tabIndex={-1}
+      className="container mt-14 px-4 pt-8 pb-12 md:px-0 md:pt-12"
+    >
       <PageHeader title="Professional Projects">
         <p>
           A selection of web, mobile, and desktop applications I’ve built for clients. Each one was

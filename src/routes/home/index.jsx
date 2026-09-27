@@ -21,7 +21,11 @@ export default function HomePage() {
     document.title = "Software Engineer - Tom Zmyslo";
   }, []);
   return (
-    <main className="container mt-14 px-4 pt-8 pb-12 md:px-0 md:pt-12">
+    <main
+      id="main-content"
+      tabIndex={-1}
+      className="container mt-14 px-4 pt-8 pb-12 md:px-0 md:pt-12"
+    >
       <div className="grid items-start gap-10 lg:grid-cols-3 lg:gap-12">
         <div className="lg:col-span-2">
           <p className="mb-4 text-sm font-semibold tracking-wide text-slate-500 uppercase">

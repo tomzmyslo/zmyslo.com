@@ -84,3 +84,31 @@ test("serves a real résumé PDF", async ({ page, request }) => {
   expect(response.headers()["content-type"]).toContain("application/pdf");
   expect((await response.body()).subarray(0, 5).toString()).toBe("%PDF-");
 });
+
+test("keyboard users can skip navigation on every main page", async ({ page }) => {
+  for (const path of ["/", "/projects", "/brewing", "/resume", "/missing-page"]) {
+    await page.goto(path);
+    await page.keyboard.press("Tab");
+    const skip = page.getByRole("link", { name: "Skip to content" });
+    await expect(skip).toBeFocused();
+    await page.keyboard.press("Enter");
+    await expect(page.getByRole("main")).toBeFocused();
+  }
+});
+
+test("pages fit a narrow mobile viewport", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 700 });
+  for (const path of [
+    "/",
+    "/projects",
+    "/brewing",
+    "/resume",
+    ...projects.map((p) => `/projects/${p.slug}`),
+  ]) {
+    await page.goto(path);
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    expect(
+      await page.locator("html").evaluate((element) => element.scrollWidth),
+    ).toBeLessThanOrEqual(320);
+  }
+});
