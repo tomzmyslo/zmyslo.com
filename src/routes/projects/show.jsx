@@ -14,7 +14,11 @@ export default function ProjectPage() {
   if (!project) return <NotFound />;
 
   return (
-    <main className="container mt-14 px-4 pt-8 pb-12 md:px-0 md:pt-12">
+    <main
+      id="main-content"
+      tabIndex={-1}
+      className="container mt-14 px-4 pt-8 pb-12 md:px-0 md:pt-12"
+    >
       <Link
         className="mb-6 inline-flex items-center gap-1 text-sm font-medium text-sky-900 hover:underline"
         to="/projects"

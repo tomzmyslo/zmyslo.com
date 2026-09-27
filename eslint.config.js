@@ -1,69 +1,31 @@
 import { defineConfig, globalIgnores } from "eslint/config";
 import globals from "globals";
 import { fixupConfigRules } from "@eslint/compat";
-import reactRefresh from "eslint-plugin-react-refresh"; // Native default import
 import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-
-// Emulate CJS __dirname in ESM
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
+import react from "eslint-plugin-react";
+import reactHooks from "eslint-plugin-react-hooks";
+import reactRefresh from "eslint-plugin-react-refresh";
 
 export default defineConfig([
+  globalIgnores(["**/dist", "**/old", "playwright-report", "test-results"]),
   {
     files: ["**/*.{js,jsx}"],
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-      },
-      ecmaVersion: "latest",
-      sourceType: "module",
-    },
-
-    // Keeps your legacy plugin compatibility intact
-    extends: fixupConfigRules(
-      compat.extends(
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:react/jsx-runtime",
-        "plugin:react-hooks/recommended",
-      ),
-    ),
-
-    settings: {
-      react: {
-        version: "detect",
-      },
-    },
-
-    plugins: {
-      "react-refresh": reactRefresh,
-    },
-
-    rules: {
-      "no-unused-vars": "error",
-      "react/prop-types": "off",
-      "react/jsx-no-target-blank": "off",
-      "react-refresh/only-export-components": [
-        "warn",
-        {
-          allowConstantExport: true,
-        },
-      ],
-    },
+    extends: [js.configs.recommended],
+  },
+  {
+    files: ["src/**/*.{js,jsx}"],
+    languageOptions: { globals: globals.browser },
+    extends: [
+      // React's rules still need the ESLint compatibility adapter.
+      ...fixupConfigRules([react.configs.flat.recommended, react.configs.flat["jsx-runtime"]]),
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    settings: { react: { version: "detect" } },
+    rules: { "react/prop-types": "off" },
   },
   {
     files: ["*.config.js", "tests/**/*.js"],
     languageOptions: { globals: globals.node },
   },
-  // Modern global ignore syntax
-  globalIgnores(["**/dist", "**/old", "**/.eslintrc.cjs", "playwright-report", "test-results"]),
 ]);

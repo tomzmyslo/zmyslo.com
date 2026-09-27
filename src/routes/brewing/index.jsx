@@ -15,7 +15,11 @@ export default function BrewingPage() {
   }, []);
 
   return (
-    <main className="container mt-14 px-4 pt-8 pb-12 md:px-0 md:pt-12">
+    <main
+      id="main-content"
+      tabIndex={-1}
+      className="container mt-14 px-4 pt-8 pb-12 md:px-0 md:pt-12"
+    >
       <header className="mb-9 border-b border-slate-300 pb-7 md:mb-10">
         <h1 className="mb-4 text-4xl font-bold text-sky-900">Brewing</h1>
         <p className="max-w-2xl text-sm leading-7 text-slate-600 md:text-base">

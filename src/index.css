@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 
-@source inline("bg-sky-100");
-@source inline("bg-sky-700");
-
 .rubik-normal {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
@@ -15,4 +12,8 @@
 a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
+}
+
+main {
+  scroll-margin-top: 4.5rem;
 }

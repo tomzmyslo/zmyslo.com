@@ -19,7 +19,11 @@ export default function ResumePage() {
   }, []);
 
   return (
-    <main className="container mt-14 px-4 pt-8 pb-12 md:px-0 md:pt-12">
+    <main
+      id="main-content"
+      tabIndex={-1}
+      className="container mt-14 px-4 pt-8 pb-12 md:px-0 md:pt-12"
+    >
       <PageHeader
         title="Résumé"
         action={
