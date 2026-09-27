@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test": "pnpm build && playwright test",
+    "check": "pnpm lint && pnpm test",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -28,6 +30,7 @@
     "@eslint/compat": "^2.1.1",
     "@eslint/eslintrc": "^3.3.7",
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
     "@tailwindcss/vite": "^4.3.3",
     "@vitejs/plugin-react": "^6.1.1",
     "eslint": "^10.10.0",
@@ -40,5 +43,5 @@
     "tailwindcss": "^4.3.3",
     "vite": "^8.3.0"
   },
-  "packageManager": "pnpm@10.0.0"
+  "packageManager": "pnpm@12.6.0"
 }

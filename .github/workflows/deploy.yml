@@ -1,43 +1,58 @@
-name: Deploy
+name: Check and Deploy
 
 on:
   push:
     branches:
       - main
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
 
 jobs:
   deploy:
-    name: Deploy
+    name: Check and Deploy
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
         with:
           run_install: false
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: "pnpm"
 
       - name: Install Dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
-      - name: Build App
-        run: pnpm build
+      - name: Lint
+        run: pnpm lint
+
+      - name: Install Test Browser
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Build and Test App
+        run: pnpm test
 
       - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.9.0
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: webfactory/ssh-agent@v0.10.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Copy Files
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |
           rsync -av --delete-after -e "ssh -o StrictHostKeyChecking=no" \
           ./dist/* ${{ secrets.USER }}@${{ secrets.IP_ADDRESS }}:/var/www/www.zmyslo.com
